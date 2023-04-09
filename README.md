@@ -1,6 +1,8 @@
 # python-require: Provides one-time installation of Python package
 python-require allows for one-time installation of a Python package. It is particularly useful for prototyping, where you need to quickly install a package and use it in your code but you don't want to bloat your environment. Inspired by npx and pipx
 
+It's worth noting that packages installed by python-require are automatically deleted after the script finishes running. This means that the package will not persist in your development environment, and will need to be re-installed the next time you run your script. This behavior is intentional, as it helps prevent conflicts between different versions of packages that may be installed in your environment.
+
 
 ## Installation
 ```bash
