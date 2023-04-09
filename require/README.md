@@ -1,0 +1,29 @@
+# python-require: Provides one-time installation of Python package
+python-require allows for one-time installation of a Python package. It is particularly useful for prototyping, where you need to quickly install a package and use it in your code but you don't want to bloat your environment. Inspired by npx and pipx
+
+
+## Installation
+```bash
+pip install python-require
+```
+
+
+## Usage
+```python
+from require import require
+
+# Install a package
+requests = require("requests")
+r = requests.get("https://google.com")
+print(r.status_code)
+```
+
+
+## Caveats
+python-require is not a package manager. It is a tool for prototyping. It is not meant to be used in production.
+Additionally, Python-Require may not work properly in all environments. In particular, it may have trouble installing packages in virtual environments with non-standard configurations. Use at your own risk!
+
+
+## License
+
+[MIT License](./LICENSE.txt)
