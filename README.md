@@ -6,13 +6,13 @@ It's worth noting that packages installed by python-require are automatically de
 
 ## Installation
 ```bash
-pip install python-require
+pip install require-package
 ```
 
 
 ## Usage
 ```python
-from require import require
+from require_package import require
 
 # Install a package
 requests = require("requests")
